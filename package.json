@@ -1,23 +1,26 @@
 {
-  "name": "bookworm-react",
+  "name": "bookapp-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^3.3.7",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-bootstrap-button-loader": "^1.0.11",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "eslint src"
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "validator": "^9.4.1"
   },
   "devDependencies": {
     "eslint": "^4.13.1",
-    "eslint-config-airbnb": "15.1.0",
+    "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
@@ -25,5 +28,12 @@
     "eslint-plugin-react": "^7.5.1",
     "prettier": "^1.9.2",
     "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
   }
 }
