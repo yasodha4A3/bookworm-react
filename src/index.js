@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import App from './App';
 import rootReducer from './rootReducer';
 import registerServiceWorker from './registerServiceWorker';
@@ -23,7 +23,7 @@ if (localStorage.bookwormJWT) {
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-      <App />
+      <Route component={App} />
     </Provider>
   </BrowserRouter>,
   document.getElementById('root')
